@@ -49,7 +49,7 @@ class dict(object):
         head = '\033[93m\033[1m' + word + '\033[0m'
         output = ''
         sounds = set()
-        pronun = ' \033[94m\033[2m\033[3m['
+        pronun = ' \033[94m\033[3m['
         for entry in data['results'][0]['lexicalEntries']:
             info = self.parse(entry)
             if info['pronun'] not in sounds and info['pronun']:
